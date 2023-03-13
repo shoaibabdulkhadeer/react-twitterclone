@@ -7,9 +7,8 @@ import {AiOutlineDown} from 'react-icons/ai';
 import '../styles/home.css'
 
 
-// Destructuring
+// Destructuring from home component
 const Post = ({image,user,Id,time,para,comment,retweet,likes,shares}) => {
-
 
   return (
     <>

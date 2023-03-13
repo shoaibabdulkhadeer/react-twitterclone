@@ -9,14 +9,7 @@ import {BsStars} from 'react-icons/bs';
 import Post from './Post';
 
 
-
-
-
-
-
-
 const Home = () => {
-
 
   let datas = [
     {
@@ -24,7 +17,7 @@ const Home = () => {
       user:"Cristiano Ronaldo",
       Id:"@Cristiano",
       time:"10 sec",
-      para:"Always believe until the end! Vamos!!💪🏼💛💙 ",
+      para:"Always believe until the end! Vamos!!💪🏼💛💙⚽ ",
       comment:"5,061",
       retweet:"23.3K",
       likes:"265.6K",
@@ -50,6 +43,26 @@ const Home = () => {
   retweet:"23",
   likes:"265",
   shares:"5"
+},{
+  image:'/images/cr7.jpg',
+  user:"FakeRonaldo",
+  Id:"@Ronaldo",
+  time:"2 sec",
+  para:"Hala Madrid ⚽😁🔥🔥",
+  comment:"5,345",
+  retweet:"70.4K",
+  likes:"22k",
+  shares:"67K"
+}, {
+  image:'/images/cr.jpg',
+  user:"Cristiano Ronaldo",
+  Id:"@Cristiano",
+  time:"10 sec",
+  para:"Always believe until the end! Vamos!!💪🏼💛💙⚽ ",
+  comment:"5,061",
+  retweet:"23.3K",
+  likes:"265.6K",
+  shares:"10.9M"
 }
 ]
   return (
@@ -59,10 +72,20 @@ const Home = () => {
       <h3 className='title'>Home</h3>
       <BsStars size={35} style={{color:'lightskyblue'}}/>
       </div>
+
+
+      <div className='navLinks'>
+            <a href="/">For you</a>
+            <a href="/">Trending</a>
+            <a href="/">News</a>
+            <a href="/">Sports</a>
+            <a href="/">Entertainment</a>
+          </div>
   
          <div className='post'>
 
           <img src="/images/cr7.jpg" alt="" />
+
          
          <form action="/" method="post">
           <div className='icons'>
@@ -78,6 +101,9 @@ const Home = () => {
          </form>
          </div>
 
+          
+         
+
 
          {/* Post component */}
        {datas.map((data) => {
@@ -88,13 +114,7 @@ const Home = () => {
         )
        })}
 
-      
-
-
-
-
-      
- 
+          
     </div>
   )
 }
